@@ -1,0 +1,18 @@
+@use "util" as util;
+
+:root {
+  --color-white: #ffffff;
+  --color-light-blue: #f6fafd;
+  --color-gray: #4b5d68;
+  --color-dark: #212353;
+  --color-purple: #9c69e2;
+  --color-pink: #f063b8;
+  --color-mint: #68c9ba;
+
+  --font-xl: #{util.rem(80)};
+  --font-l: #{util.rem(40)};
+  --font-m: #{util.rem(24)};
+  --font-s: #{util.rem(18)};
+  --font-xs: #{util.rem(16)};
+  --font-xxs: #{util.rem(14)};
+}
