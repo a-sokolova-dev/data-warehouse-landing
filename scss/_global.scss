@@ -1,4 +1,4 @@
-@use "util" as util;
+@use "util" as u;
 
 :root {
   --color-white: #ffffff;
@@ -6,13 +6,81 @@
   --color-gray: #4b5d68;
   --color-dark: #212353;
   --color-purple: #9c69e2;
+  --color-purple-shadow: #8957d9;
+  --color-purple-shadow-light: #f5f0fc;
   --color-pink: #f063b8;
+  --color-pink-transparent: #ffe8f6;
   --color-mint: #68c9ba;
 
-  --font-xl: #{util.rem(80)};
-  --font-l: #{util.rem(40)};
-  --font-m: #{util.rem(24)};
-  --font-s: #{util.rem(18)};
-  --font-xs: #{util.rem(16)};
-  --font-xxs: #{util.rem(14)};
+  --font-xl: #{u.rem(80)};
+  --font-l: #{u.rem(40)};
+  --font-m: #{u.rem(24)};
+  --font-body: #{u.rem(18)};
+  --font-s: #{u.rem(16)};
+  --font-xs: #{u.rem(14)};
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Avenir", Arial, "Lucida Grande", sans-serif;
+  font-size: var(--font-body);
+  line-height: 1.6;
+  color: var(--color-gray);
+  background: linear-gradient(var(--color-light-blue), var(--color-white));
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  color: var(--color-dark);
+  font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.wrapper {
+  width: min(u.rem(1120), calc(100% - u.rem(64)));
+  margin-inline: auto;
+}
+
+.wrapper-rounded {
+  border-radius: 50px;
 }

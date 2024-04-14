@@ -5,49 +5,80 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Data Warehouse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header class="header">
-      <a href="/"><img src="/public/img/logo.svg" alt="Homepage" /></a>
+    <header class="header wrapper">
+      <a href="/">
+        <img
+          class="header__logo"
+          src="/img/logo.svg"
+          alt="Homepage"
+          width="49px"
+          height="35px"
+        />
+      </a>
       <nav class="header__nav">
         <ul class="header__links">
-          <li><a href="" class="header__link">About</a></li>
+          <li>
+            <a href="" class="header__link header__link--active">About</a>
+          </li>
           <li><a href="" class="header__link">Help</a></li>
           <li><a href="" class="header__link">Features</a></li>
           <li><a href="" class="header__link">Signup</a></li>
         </ul>
       </nav>
+      <a href="" class="header__cta">
+        <span>Request Demo</span
+        ><img
+          class="icon"
+          width="20px"
+          height="14px"
+          src="/img/arrow_right.svg"
+          alt=""
+        />
+      </a>
     </header>
     <main class="wrapper grid">
       <section class="hero">
-        <div class="hero__background"></div>
-        <div class="hero__content">
-          <h1 class="hero__headline">Save your data storage here.</h1>
-          <p class="hero__text">
-            Data Warehouse is a data storage area that has been tested for
-            security, so you can store your data here safely but not be afraid
-            of being stolen by others.
-          </p>
-          <button class="hero__button">Learn more</button>
-        </div>
+        <img
+          src="/img/hero.png"
+          class="hero__background"
+          alt=""
+          width="885px"
+          height="468px"
+        />
+        <h1 class="hero__headline">
+          Save your data <br />
+          storage here.
+        </h1>
+        <p class="hero__description">
+          Data Warehouse is a data storage area that has been tested for
+          security, so you can store your data here safely but not be afraid of
+          being stolen by others.
+        </p>
+        <a href="" class="hero__cta">Learn more</a>
       </section>
-      <section class="description">
-        <div class="description__block rounded">
-          <picture class="description__picture">
-            <source media="" srcset="" />
-            <img src="" class="description__image" alt="" />
-          </picture>
-          <div class="description__content">
-            <h2 class="description__headline">
-              We are a high-level data storage bank
-            </h2>
-            <div class="description__headline">
-              The place to store various data that you can access at any time
-              through the internet and where you can carry it. This very
-              flexible storage area has a high level of security. To enter into
-              your own data you must enter the password that you created when
-              you registered in this Data Warehouse.
-            </div>
+      <section class="about wrapper-rounded">
+        <img
+          class="about__image"
+          src="/img/image-1.png"
+          height="504px"
+          width="477px"
+        />
+        <div class="about__content">
+          <h2 class="about__headline">We are a high-level data storage bank</h2>
+          <div class="about__description">
+            The place to store various data that you can access at any time
+            through the internet and where you can carry it. This very flexible
+            storage area has a high level of security. To enter into your own
+            data you must enter the password that you created when you
+            registered in this Data Warehouse.
           </div>
         </div>
       </section>
@@ -60,131 +91,180 @@
 
         <div class="features__grid">
           <article class="features__article">
-            <div class="features__background"></div>
-            <picture class="features__picture">
-              <source media="" srcset="" />
-              <img src="" class="features__image" alt="" />
-            </picture>
+            <img
+              class="features__background"
+              src="/img/image-2.png"
+              height="232px"
+              width="211px"
+            />
             <div class="features__content">
-              <h3 class="features__headline">Search Data</h3>
+              <h3 class="features__feature">Search Data</h3>
               <p class="features__description">
                 Don’t worry if your data is very large, the Data Warehoue
                 provides a search engine, which is useful for making it easier
                 to find data effectively saving time.
               </p>
-              <a href="">
-                Learn more
-                <img class="icon" src="" alt="" />
+              <a href="" class="features__cta">
+                <span>Learn more</span>
+                <img
+                  class="icon"
+                  width="20px"
+                  src="/img/arrow_right.svg"
+                  alt=""
+                />
               </a>
             </div>
           </article>
           <article class="features__article">
-            <div class="features__background"></div>
-            <picture class="features__picture">
-              <source media="" srcset="" />
-              <img src="" class="features__image" alt="" />
-            </picture>
+            <img
+              class="features__background"
+              src="/img/image-3.png"
+              height="241px"
+              width="185px"
+            />
             <div class="features__content">
-              <h3 class="features__headline">Print Out</h3>
+              <h3 class="features__feature">Print Out</h3>
               <p class="features__description">
                 Print out service gives you convenience if someday you need
                 print data, just edit it all and just print it.
               </p>
-              <a href="">
-                Learn more
-                <img class="features__image" src="" alt="" />
+              <a href="" class="features__cta">
+                <span>Learn more</span>
+                <img
+                  class="icon"
+                  width="20px"
+                  src="/img/arrow_right.svg"
+                  alt=""
+                />
               </a>
             </div>
           </article>
           <article class="features__article">
-            <div class="features__background"></div>
-            <picture class="features__picture">
-              <source media="" srcset="" />
-              <img src="" class="features__image" alt="" />
-            </picture>
+            <img
+              class="features__background"
+              src="/img/image-4.png"
+              height="245px"
+              width="181px"
+            />
             <div class="features__content">
-              <h3 class="features__headline">Security Code</h3>
+              <h3 class="features__feature">Security Code</h3>
               <p class="features__description">
                 Data Security is one of our best facilities. Allows for your
                 files to be safer. The file can be secured with a code or
                 password that you created, so only you can open the file.
               </p>
-              <a href="">
-                Learn more
-                <img class="features__image" src="" alt="" />
+              <a href="" class="features__cta">
+                <span>Learn more</span>
+                <img
+                  class="icon"
+                  width="20px"
+                  src="/img/arrow_right.svg"
+                  alt=""
+                />
               </a>
             </div>
           </article>
           <article class="features__article">
-            <div class="features__background"></div>
-            <picture class="features__picture">
-              <source media="" srcset="" />
-              <img src="" class="features__image" alt="" />
-            </picture>
+            <img
+              class="features__background"
+              src="/img/image-5.png"
+              height="230px"
+              width="201px"
+            />
             <div class="features__content">
-              <h3 class="features__headline">24 Hours Access</h3>
+              <h3 class="features__feature">24 Hours Access</h3>
               <p class="features__description">
                 Access is given 24 hours a full morning to night and meet again
                 in the morning, giving you comfort when you need data when
                 urgent.
               </p>
-              <a href="">
-                Learn more
-                <img class="features__image" src="" alt="" />
+              <a href="" class="features__cta">
+                <span>Learn more</span>
+                <img
+                  class="icon"
+                  width="20px"
+                  src="/img/arrow_right.svg"
+                  alt=""
+                />
               </a>
             </div>
           </article>
         </div>
       </section>
-      <section class="testimonials">
-        <div class="testimonials__block rounded">
-          <h3 class="testimonials__headline">Testimonials</h3>
-          <ul class="testimonials__carousel">
-            <li id="#slide-1" class="testimonials__slide">
-              <img src="" alt="" class="testimonials__image" />
-              <div class="testimonials__content">
-                <h3 class="testimonials__name">John Fang</h3>
-                <span class="testimonials__title">wordfaang.com</span>
+      <section class="testimonials wrapper-rounded">
+        <h3 class="testimonials__headline">Testimonials</h3>
+        <ul class="testimonials__carousel">
+          <li
+            id="#slide-1"
+            class="testimonials__slide testimonials__slide--active"
+          >
+            <img
+              src="./img/testimonial-1.png"
+              alt="John Fang"
+              class="testimonials__image"
+              height="80px"
+              width="80px"
+            />
+            <div class="testimonials__content">
+              <h3 class="testimonials__name">John Fang</h3>
+              <span class="testimonials__title">wordfaang.com</span>
+              <div class="testimonials__overlay">
                 <p class="testimonials__text">
                   Suspendisse ultrices at diam lectus nullam. Nisl, sagittis
                   viverra enim erat tortor ultricies massa turpis. Arcu pulvinar
-                  aenean nam laoreet nulla.
+                  aenean nam laoreet nulla. Lorem ipsum.
                 </p>
               </div>
-            </li>
-            <li id="#slide-2" class="testimonials__slide">
-              <img src="" alt="" class="testimonials__image" />
-              <div class="testimonials__content">
-                <h3 class="testimonials__name">Jeny Doe</h3>
-                <span class="testimonials__title">UX Engineer</span>
+            </div>
+          </li>
+          <li id="#slide-2" class="testimonials__slide">
+            <img
+              src="./img/testimonial-2.png"
+              alt="Jeny Doe"
+              class="testimonials__image"
+              height="80px"
+              width="80px"
+            />
+            <div class="testimonials__content">
+              <h3 class="testimonials__name">Jeny Doe</h3>
+              <span class="testimonials__title">UX Engineer</span>
+              <div class="testimonials__overlay">
                 <p class="testimonials__text">
                   Suspendisse ultrices at diam lectus nullam. Nisl, sagittis
                   viverra enim erat tortor
                 </p>
               </div>
-            </li>
-            <li id="#slide-3" class="testimonials__slide">
-              <img src="" alt="" class="testimonials__image" />
-              <div class="testimonials__content">
-                <h3 class="testimonials__name">William</h3>
-                <span class="testimonials__title">Web Designer</span>
+            </div>
+          </li>
+          <li id="#slide-3" class="testimonials__slide">
+            <img
+              src="./img/testimonial-3.png"
+              alt="William Fang"
+              class="testimonials__image"
+              height="80px"
+              width="80px"
+            />
+            <div class="testimonials__content">
+              <h3 class="testimonials__name">William Fang</h3>
+              <span class="testimonials__title">Web Designer</span>
+              <div class="testimonials__overlay">
                 <p class="testimonials__text">
                   Suspendisse ultrices at diam lectus nullam. Nisl, sagittis
                   viverra enim erat tortor
                 </p>
               </div>
-            </li>
-          </ul>
-          <div class="testimonials__buttons">
-            <div class="testimonials__navigation">
-              <a class="testimonials__link link-active" href="#slide-1"> 1 </a>
-              <a class="testimonials__link" href="#slide-2">2</a>
-              <a class="testimonials__link" href="#slide-3">3</a>
             </div>
-            <div class="testimonials__scroll">
-              <button class="testimonials__scrollLeft"></button>
-              <button class="testimonials__scrollRight"></button>
-            </div>
+          </li>
+        </ul>
+        <div class="testimonials__buttons">
+          <div class="testimonials__navigation">
+            <a class="testimonials__link" href="#slide-1"> 1 </a>
+            <a class="testimonials__link" href="#slide-2">2</a>
+            <a class="testimonials__link" href="#slide-3">3</a>
+          </div>
+          <div class="testimonials__scroll">
+            <button class="testimonials__scrollLeft"></button>
+            <button class="testimonials__scrollRight"></button>
           </div>
         </div>
       </section>
@@ -197,16 +277,17 @@
           <div class="demo__links">
             <a href="" class="demo__moreLink"> Learn more</a>
             <a class="demo__requestLink"
-              >Request Demo <img class="icon" src="" alt="" />
+              >Request Demo
+              <img class="icon" width="20px" height="14px" src="" alt="" />
             </a>
           </div>
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer wrapper">
       <div class="footer__info">
         <a href="/" n class="footer__logo">
-          <img src="/public/img/logo.svg" alt="Homepage" /> Data Warehoue
+          <img src="/img/logo.svg" alt="Homepage" /> Data Warehoue
         </a>
         <p class="footer__address">
           Warehouse Society, 234<br />Bahagia Ave Street PRBW 29281

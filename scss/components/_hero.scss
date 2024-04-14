@@ -1,0 +1,32 @@
+@use "../util/" as u;
+
+.hero {
+  position: relative;
+
+  &__headline {
+    font-size: var(--font-xl);
+  }
+
+  &__description {
+    max-width: u.rem(380);
+  }
+
+  &__cta {
+    display: inline-block;
+    padding: u.rem(16) u.rem(36);
+
+    font-size: var(--font-s);
+    font-weight: 700;
+    color: var(--color-white);
+
+    background: var(--color-purple);
+    border-radius: u.rem(50);
+  }
+
+  &__background {
+    position: absolute;
+    bottom: 0;
+    right: u.rem(-128);
+    z-index: -10;
+  }
+}

@@ -1,0 +1,75 @@
+@use "../util/" as u;
+
+.testimonials {
+  background-color: var(--color-purple);
+
+  &__headline {
+    color: var(--color-white);
+    font-size: var(--font-l);
+  }
+
+  &__slide {
+    display: flex;
+    gap: u.rem(30);
+    width: u.rem(400);
+    height: u.rem(330);
+    padding: u.rem(60) u.rem(60) u.rem(60) u.rem(40);
+
+    background-color: var(--color-white);
+    border-radius: u.rem(20);
+
+    box-shadow: 0px 20px 0px var(--color-purple-shadow);
+  }
+
+  &__slide--active {
+    width: u.rem(640);
+    padding: u.rem(60) u.rem(70);
+  }
+
+  &__slide--active &__text:after {
+    display: none;
+  }
+
+  &__image {
+    width: u.rem(80);
+    height: u.rem(80);
+  }
+
+  &__content {
+    padding-top: u.rem(20);
+  }
+
+  &__overlay {
+    position: relative;
+  }
+
+  &__text:after {
+    z-index: 100;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 1) 10%,
+      rgba(255, 255, 255, 0.45) 80%,
+    );
+    pointer-events: none;
+  }
+
+  &__name {
+    font-size: var(--font-body);
+  }
+
+  &__title {
+    font-size: var(--font-xs);
+    color: var(--color-purple);
+  }
+
+  &__text {
+    padding-top: u.rem(20);
+    line-height: 1.8;
+  }
+}

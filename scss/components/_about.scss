@@ -1,0 +1,9 @@
+@use "../util/" as u;
+
+.about {
+  background-color: var(--color-pink-transparent);
+
+  &__headline {
+    font-size: var(--font-l);
+  }
+}
