@@ -1,0 +1,31 @@
+@use "../util/" as u;
+
+.footer {
+  &__info {
+    color: var(--color-dark);
+  }
+
+  &__logo {
+    font-size: var(--font-m);
+    font-weight: bold;
+  }
+
+  &__address {
+    color: var(--color-dark);
+  }
+
+  &__nav {
+    color: var(--color-dark);
+    font-weight: bold;
+  }
+
+  &__links {
+    color: var(--color-dark);
+  }
+
+  &__copyrights {
+    color: var(--color-dark);
+    font-size: var(--font-xs);
+    line-height: 1.8;
+  }
+}
