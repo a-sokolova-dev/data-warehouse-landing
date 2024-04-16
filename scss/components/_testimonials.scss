@@ -54,7 +54,7 @@
     background: linear-gradient(
       to left,
       rgba(255, 255, 255, 1) 10%,
-      rgba(255, 255, 255, 0.45) 80%,
+      rgba(255, 255, 255, 0.45) 80%
     );
     pointer-events: none;
   }
@@ -71,5 +71,29 @@
   &__text {
     padding-top: u.rem(20);
     line-height: 1.8;
+  }
+
+  &__navigation {
+    display: flex;
+    gap: u.rem(10);
+  }
+
+  &__link {
+    display: inline-flex;
+    width: u.rem(10);
+    height: u.rem(10);
+    background: var(--color-white);
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  &__link:focus {
+    background: var(--color-pink);
+  }
+
+  &__scroll {
+    display: flex;
+    gap: u.rem(20);
   }
 }
