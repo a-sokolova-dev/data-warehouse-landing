@@ -1,0 +1,41 @@
+@use "../util/" as u;
+
+.demo {
+  border-top: u.rem(1) solid var(--color-purple);
+
+  &__headline {
+    font-size: var(--font-l);
+  }
+
+  &__cta {
+    display: inline-block;
+
+    padding: u.rem(18) u.rem(30);
+
+    background: var(--color-white);
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    border-radius: u.rem(50);
+
+    color: var(--color-dark);
+    font-size: var(--font-s);
+    font-weight: 700;
+
+    .icon {
+      display: inline-block;
+      margin-left: u.rem(20);
+      vertical-align: middle;
+    }
+  }
+
+  &__learnMore {
+    display: inline-block;
+    padding: u.rem(16) u.rem(36);
+
+    font-size: var(--font-s);
+    font-weight: 700;
+    color: var(--color-white);
+
+    background: var(--color-pink);
+    border-radius: u.rem(50);
+  }
+}
